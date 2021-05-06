@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>보냄</title>
+</head>
+<body>
+	<form action="request_answer.jsp" method="post">
+		<input type="text" name="number1" size="10"> + <input type="text" name="number2" size="10"> <br>
+		<select name="protocol1">
+			<option value=""></option>	
+		</select> X
+		<select name="protocol2">
+		
+		</select>
+		<input type="submit" value="OK">
+	</form>
+</body>
+</html>
