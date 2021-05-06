@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>성인 확인</title>
+</head>
+<body>
+	
+	<%
+		int age=Integer.parseInt(request.getParameter("age"));
+		String person,admit;
+		if(age>19){
+			person="성인";
+			admit="";
+		}else{
+			person="미성년자";
+			admit="불";
+		}
+	%>
+	
+	<h1><%=person %></h1><br>
+	
+	당신의 나이는 <%=age%>살 이므로 주류 구매가 <%=admit%>가능합니다.
+	<a href="http://localhost:8090/5.6/ResponseAge_01.jsp">처음으로 이동</a>
+</body>
+</html>
