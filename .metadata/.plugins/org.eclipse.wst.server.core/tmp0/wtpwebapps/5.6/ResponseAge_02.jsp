@@ -9,7 +9,6 @@
 </head>
 <body>
 	<%
-	request.setCharacterEncoding("utf-8");
 		int age=Integer.parseInt(request.getParameter("age"));
 		String person,admit;
 		if(age>19) {
